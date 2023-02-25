@@ -6,9 +6,11 @@ import datetime
 
 from pyrogram import Client, filters, enums
 from pyrogram.types import Message
-from config import config
+import config
 
-app = Client(**config, )
+app = Client("my_account",
+             api_id=config.api_id,
+             api_hash=config.api_hash)
 print('bot started')
 
 
