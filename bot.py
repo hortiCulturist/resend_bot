@@ -8,7 +8,7 @@ from pyrogram import Client, filters, enums
 from pyrogram.types import Message
 import config
 
-app = Client("my_account",
+app = Client(name='resend',
              api_id=config.api_id,
              api_hash=config.api_hash)
 print('bot started')
